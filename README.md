@@ -29,6 +29,7 @@ public class Baseball {
 
 
 ```java
+(원하는 선수를 삭제해서 배열에 담는 메서드)
 public class Baseball {
   public static void main(String[] args) {
     public static String[] del_list(String path, int playerNum) { 
@@ -62,6 +63,7 @@ public class Baseball {
 }
 ```
 ```java
+(삭제된 선수의 정보를 담은 배열을 받아 파일의 기존 내용을 삭제하고 원하는 정보를 넣어주는 메서드)
 public class Baseball {
   public static void main(String[] args) {
     public static void deletePlayer_on_txt(String path,String[] delete) {

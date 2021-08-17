@@ -25,7 +25,7 @@ public class Baseball {
   }
 }
 ```
-> __Reader와 Writer이 동시에 실행되어서 <br>FileOutputStream(String name, boolean append) append가 false이면<br> 기존 내용 삭제하고 새로운 내용을 덮어 주는데 메서드가 실행되는 순간 기존의 내용이 삭제되어<br> 파일 안의 모든 정보가 날아가 불러올 자료가 없게 된다는 것이다__
+> __Reader와 Writer 동시에 실행되어서 <br>FileOutputStream(String name, boolean append) append가 false이면<br> 기존 내용 삭제하고 새로운 내용을 덮어 주는데 메서드가 실행되는 순간 기존의 내용이 삭제되어<br> 파일 안의 모든 정보가 날아가 불러올 자료가 없게 된다는 것이다__
 
 
 ```java

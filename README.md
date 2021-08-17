@@ -11,7 +11,7 @@ data 관리를 위해 Stream으로 txt파일에 저장하고 로드하는 방식
 사용자는 구단을 생성하고 경매장에서 원하는 선수들을 영입하여 게임하는 방식<br>
 스탯별로 선수들의 영입가가 다르고 게임 승리시 받는 상금으로 선수들을 영입 / 방출하며 자신만의 구단가치를 올리는 게임<br>
  
-## 📝  _Trouble_   
+## 📝  _Troubles_   
 
 ```java
 public class Baseball {
@@ -34,8 +34,20 @@ public class Baseball {
 ```java
 public class Baseball {
   public static void main(String[] args) {
-    System.out.println("트러블 오류 해결코드");
+    String [][] list = new String [count][];
+	
+   for(String checks : check_size) {
+    list[len++] = checks.split("/");
+   }
+
+   for(int i = 0; i < list.length; ++i) {
+      if(playerNum == Integer.parseInt(list [i][0])) {
+         money = Integer.parseInt(list [i][4]);
+         out.write(check_size.get(i)+"\n");
+         System.out.println("[결과] : "+check_size.get(i));
+      }
   }
+ }
 }
 ```
 > __해결 방법__

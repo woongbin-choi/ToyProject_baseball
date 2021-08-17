@@ -132,18 +132,42 @@ public class Baseball {
 
 ***
 
-
-
-*** 
 ```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("트러블 오류 해결코드");
-  }
-}
+public static void saveGame(int check, String adrees) {
+      try {
+         BufferedWriter out = new BufferedWriter(new FileWriter(adrees));
+
+         String user_score = ""+check+"\n";
+         System.out.println("user_score : "+user_score);
+         out.write(user_score);
+         out.close();
+      } catch (FileNotFoundException e) {
+         e.printStackTrace();
+      } catch (IOException e) {
+         e.printStackTrace();
+      }   
+   }
+
+public static int loadGame(String adrees) {
+      try {
+         BufferedReader in = new BufferedReader(new FileReader(adrees));
+         
+         String len = ""+in.readLine();
+
+         CreatePlayerList.playerNum = Integer.parseInt(len);
+         System.out.println("CreatePlayerList.playerNum  : "+CreatePlayerList.playerNum );
+         in.close();
+      } catch (FileNotFoundException e) {
+         e.printStackTrace();
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+      return CreatePlayerList.playerNum + 1;      
+   }
 ```
-> __해결 방법__
-> > 해결방법 설명
+> __선수를 영입/방출하기 위해서는 고유번호가 필요하다__
+> > 모든 선수들의 정보를 불러와 고유번호만을 체크하여 가장 큰 번호를 알아내고<br> 그다음의 숫자부터
+선수를 생성하면 되는데<br> 파일을 이용하여 선수의 고유번호를 세이브하고 로드하는 방식을 택하였다
 
 ***  
 

@@ -30,7 +30,7 @@ public class Baseball {
 이 문제를 해결하기 위해 파일에서 정보를 읽어오는 while문이 돌 때에<br>
 그 횟수를 카운트하여 문제를 해결하였다
 
-### 오류발생
+***
 ```java
 public class Baseball {
   public static void main(String[] args) {
@@ -50,10 +50,12 @@ public class Baseball {
  }
 }
 ```
-> __해결 방법__
-> > 해결방법 설명
+> __선수 스탯 가져오기__
+> > 파일에 정보를 넣을 때에 '/'를 기준으로 넣어 스플릿을 사용하여 꺼낼 것은 생각하였으나<br>
+어디에 담아야 선수들에 스탯을 잘 꺼내올 수 있을지 고민하였고,<br>
+해결방안은 이중 배열을 이용하여 문제를 해결하였다
 
-### 오류발생
+***
 ```java
 public class Baseball {
   public static void main(String[] args) {
@@ -64,7 +66,7 @@ public class Baseball {
 > __해결 방법__
 > > 해결방법 설명
 
-### 오류발생
+***I 
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {

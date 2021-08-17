@@ -1,4 +1,4 @@
-# _⚾ Movie Kiosk_ (Toy Project)    
+_# _⚾ Movie Kiosk_ (Toy Project)    
 ***
 ### Period : June 2021,  2weeks
 ### Personnel : 개인프로젝트  
@@ -13,6 +13,23 @@ data 관리를 위해 Stream으로 txt파일에 저장하고 로드하는 방식
  
 ## 📝  _Trouble_   
 
+```java
+public class Baseball {
+  public static void main(String[] args) {
+    while((check = in.readLine()) != null) {
+	check_size.add(check);
+	count++;
+     }
+    String[][] list = new String[count][];
+  }
+}
+```
+> __선수들의 정보중 일정 부분만을 선택할 수 있어야 한다__
+> > 이중 배열에 담아서 문제를 해결하기로 하였으나 배열에 사이즈를 어떻게 줘야 할지가 문제였다<br>
+배열은 동적 할당이 되지않기에 내가 파일에서 읽어온 사이즈를 알아야 했고,<br>
+이 문제를 해결하기 위해 파일에서 정보를 읽어오는 while문이 돌 때에<br>
+그 횟수를 카운트하여 문제를 해결하였다
+
 ### 오류발생
 ```java
 public class Baseball {
@@ -26,18 +43,7 @@ public class Baseball {
 
 ### 오류발생
 ```java
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("트러블 오류 해결코드");
-  }
-}
-```
-> __해결 방법__
-> > 해결방법 설명
-
-### 오류발생
-```java
-public class BootSpringBootApplication {
+public class Baseball {
   public static void main(String[] args) {
     System.out.println("트러블 오류 해결코드");
   }
@@ -109,3 +115,4 @@ public static String[] del_list(String path, int playerNum) {
 
 ## _회고록_
 ~~~~~~~~~~작성~~~~~~~~~~~
+_

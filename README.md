@@ -236,7 +236,7 @@ public class Baseball {
 
 
 ## 📸 _ScreenShot_   
-  ![구단이름정하기](./img/1.png)
+  <img width="532" alt="KakaoTalk_20210817_132804121" src="https://user-images.githubusercontent.com/82255957/129663781-ebacfad4-88c5-4b7d-a914-1edbd3218ce2.png">
 
 
 ## _회고록_

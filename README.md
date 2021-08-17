@@ -236,9 +236,8 @@ public class Baseball {
 
 
 ## 📸 _ScreenShot_   
-1.구단 설정하기   
+1. 구단 설정하기   
   <img width="532" alt="KakaoTalk_20210817_132804121" src="https://user-images.githubusercontent.com/82255957/129663781-ebacfad4-88c5-4b7d-a914-1edbd3218ce2.png">
-  
 2. 선수 구매/상대 팀 결정/ 타석바꾸기 
 <img width="962" alt="KakaoTalk_20210817_132804121_01" src="https://user-images.githubusercontent.com/82255957/129663819-d5882a25-233c-40a6-bc39-f25aad5db168.png">
  

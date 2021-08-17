@@ -216,11 +216,20 @@ public static String[] del_list(String path, int playerNum) {
 ***  
 
 > `타석 바꾸기`
-> >   내용  
+> > 1. 선수의 순번 배정을 위해 bat_turn 배열안에 1~6까지의 숫자를 넣어준다<br>2. int pick으로 값을 받는데 배열이기에 -1을 해줘서 0번 자리부터 교환 할 수 있게 해준다<br>3. 콘솔에 bat_turn 배열을 띄워 1,2,3,4,5,6을 보여주고 선수들이 순서대로 나올때에 그 선수를 replace라는 기능을 이용하여<br>bat_turn배열에 입력한 숫자의 자리와 값을 교환하여 bat_turn 배열안에 선수의 정보를 담아준다<br> 
 ```java
 public class Baseball {
   public static void main(String[] args) {
- 
+ 	String[] bat_turn = {"1","2","3","4","5","6"};
+         
+         for(int i = 0 ; i < 6; ++i) {
+            System.out.println(G.return_array(T.print_txt(user+".txt"))[i]);
+            System.out.println(Arrays.toString(bat_turn));
+            System.out.println("몇번째 타석에 넣으시겠습니까 ?");
+            int pick = sc.nextInt()-1;
+
+            bat_turn[pick] = bat_turn[pick].replace(bat_turn[pick], G.return_array(T.print_txt(user+".txt"))[i]);
+         }
  }
 }
 ```

@@ -15,7 +15,7 @@ data 관리를 위해 Stream으로 txt파일에 저장하고 로드하는 방식
 
 ### 오류발생
 ```java
-public class BootSpringBootApplication {
+public class Baseball {
   public static void main(String[] args) {
     System.out.println("트러블 오류 해결코드");
   }

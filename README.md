@@ -29,12 +29,60 @@ public class Baseball {
 
 
 ```java
-public class BootSpringBootApplication {
+public class Baseball {
   public static void main(String[] args) {
-    System.out.println("핵심 트러블 오류 해결 후 코드");
+    public static String[] del_list(String path, int playerNum) { 
+      int len = 0;
+      int count = 0;
+      String[] delete;
+      ArrayList<String> check_size = new ArrayList<>();
+      try (BufferedReader in = new BufferedReader(new FileReader(
+            path, Charset.forName("UTF-8")),2048);
+            ){
+
+         String check;
+         while((check = in.readLine()) != null) {
+            check_size.add(check);
+            count++;
+         }
+         String[][] list = new String[count][];
+         for(String checks : check_size) {
+            list[len++] = checks.split("/");
+         }
+         delete = new String[count];
+         
+         for(int i = 0; i < list.length; ++i) {         
+            if(playerNum != Integer.parseInt(list[i][0])) {
+               delete[i] = check_size.get(i)+"\n";
+            }else {
+               delete[i] = "";
+            }
+         }   
   }
 }
 ```
+```java
+public class Baseball {
+  public static void main(String[] args) {
+    public static void deletePlayer_on_txt(String path,String[] delete) {
+      try(BufferedWriter out = new BufferedWriter(new FileWriter(
+            path, Charset.forName("UTF-8"),false),2048)){
+         for(int i = 0; i < delete.length; ++i) {         
+            if(delete[i] != " ") {
+               out.write(delete[i]);
+            }
+         }      
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+   }
+  }
+}
+```
+이 문제를 해결하기 위해 메서드를 2개로 분리하였고<br>
+하나는 원하는 선수를 삭제한 정보를 가지고 있는 배열을 리턴해주는 메서드를 만들었고<br>
+나머지 하나는 파일의 기존 내용을 삭제하고 원하는 선수가 삭제된 정보를 가지고 있는 배열을 받아서<br>
+파일에 다시 담아주는 메서드를 만들었다
  
 ## 📝  _Troubles_   
 

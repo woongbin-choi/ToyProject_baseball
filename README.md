@@ -1,4 +1,4 @@
-# _⚾ Movie Kiosk_ (Toy Project)    
+# _⚾ Baseball Game_ (Toy Project)    
 ***
 ### Period : June 2021,  2weeks
 ### Personnel : 개인프로젝트  

@@ -227,7 +227,7 @@ public class Baseball {
 
 
 ## 📸 _ScreenShot_   
-  ![ex_screenshot](./img/1.png)
+  ![구단이름정하기](./img/1.png)
 
 
 ## _회고록_

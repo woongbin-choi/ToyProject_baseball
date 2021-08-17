@@ -246,5 +246,7 @@ public class Baseball {
 <img width="211" alt="KakaoTalk_20210817_132804121_03" src="https://user-images.githubusercontent.com/82255957/129663858-3523dcb6-6605-4ba9-b825-e20230fa68a9.png">
 
 ## _회고록_
-~~~~~~~~~~작성~~~~~~~~~~~
-_
+처음으로 Java Toy Project를 진행하면서 그동안 배웠던 문법들을 다시 한번 정리할 수 있었고<br>
+많이 부족한 코드이지만 객체지향적으로 계속해서 나눠가는 연습을 할 수 있었다<br>
+Toy Project는 오류들을 만났을 때 스트레스 받지 않는 선에서 고쳐나가는 재미를 느끼게 해주었다<br>
+이제는 DB와 Spring을 배워나가는걸 이용해서 그동안 만들고 싶었던 프로젝트를 다시 한번 도전해보고 싶은 마음이 들었다

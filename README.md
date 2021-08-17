@@ -104,7 +104,7 @@ public static String[] del_list(String path, int playerNum) {
 ***   
 
 ## 📸 _ScreenShot_   
-  ![ex_screenshot](BaseballConsoleGame/img/1.png)
+  ![ex_screenshot](./img/1.png)
 
 
 ## _회고록_

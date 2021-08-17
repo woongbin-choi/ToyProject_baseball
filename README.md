@@ -1,4 +1,4 @@
-_# _⚾ Movie Kiosk_ (Toy Project)    
+# _⚾ Movie Kiosk_ (Toy Project)    
 ***
 ### Period : June 2021,  2weeks
 ### Personnel : 개인프로젝트  
@@ -10,6 +10,31 @@ Database를 배우기 전 Java 기본 문법과 객체지향적으로 클래스�
 data 관리를 위해 Stream으로 txt파일에 저장하고 로드하는 방식으로 게임 구현<br>
 사용자는 구단을 생성하고 경매장에서 원하는 선수들을 영입하여 게임하는 방식<br>
 스탯별로 선수들의 영입가가 다르고 게임 승리시 받는 상금으로 선수들을 영입 / 방출하며 자신만의 구단가치를 올리는 게임<br>
+
+
+***
+## 📌 _Core Trouble shooting_   
+```java
+public class Baseball {
+  public static void main(String[] args) {
+    try (BufferedReader in = new BufferedReader(new FileReader(
+                  path, Charset.forName("UTF-8")),2048);
+         BufferedWriter out = new BufferedWriter(new FileWriter(
+                  path, Charset.forName("UTF-8"),false),2048)
+         )
+  }
+}
+```
+> __Reader와 Writer이 동시에 실행되어서 <br>FileOutputStream(String name, boolean append) append가 false이면<br> 기존 내용 삭제하고 새로운 내용을 덮어 주는데 메서드가 실행되는 순간 기존의 내용이 삭제되어<br> 파일 안의 모든 정보가 날아가 불러올 자료가 없게 된다는 것이다__
+
+
+```java
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("핵심 트러블 오류 해결 후 코드");
+  }
+}
+```
  
 ## 📝  _Troubles_   
 
@@ -56,17 +81,10 @@ public class Baseball {
 해결방안은 이중 배열을 이용하여 문제를 해결하였다
 
 ***
-```java
-public class Baseball {
-  public static void main(String[] args) {
-    System.out.println("트러블 오류 해결코드");
-  }
-}
-```
-> __해결 방법__
-> > 해결방법 설명
 
-***I 
+
+
+*** 
 ```java
 public class BootSpringBootApplication {
   public static void main(String[] args) {

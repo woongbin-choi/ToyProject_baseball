@@ -3,7 +3,7 @@
 ### Period : June 2021,  2weeks
 ### Personnel : 개인프로젝트  
 ***
-## 📌 _Used Technology_ : JAVA 11 
+## 📌 _Used Technology_ : JAVA 11.0.1 
 ***
 ## 📌 _Description_ 
 Database를 배우기 전 Java 기본 문법과 객체지향적으로 클래스를 나누는 복습을 위해 만든 Toy Project<br>

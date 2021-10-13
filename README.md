@@ -17,7 +17,7 @@ data 관리를 위해 Stream으로 txt파일에 저장하고 로드하는 방식
 ```java
 public class Baseball {
   public static void main(String[] args) {
-    try (BufferedReader in = new BufferedReader(new FileReader(
+    try (BufferedReader in = new BufferedReader(new FileReader(.  
                   path, Charset.forName("UTF-8")),2048);
          BufferedWriter out = new BufferedWriter(new FileWriter(
                   path, Charset.forName("UTF-8"),false),2048)
